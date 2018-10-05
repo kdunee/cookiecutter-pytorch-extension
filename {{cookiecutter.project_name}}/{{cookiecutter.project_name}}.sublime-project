@@ -13,7 +13,7 @@
 			"-I$ANACONDA_ROOT/include/python3.6m",
 			"-I/usr/local/cuda/include",
 			"-DTORCH_API_INCLUDE_EXTENSION_H",
-			"-DTORCH_EXTENSION_NAME={{project_name}}"
+			"-DTORCH_EXTENSION_NAME={{cookiecutter.project_name}}"
 		]
 	},
 	"build_systems": [

@@ -1,0 +1,4 @@
+/build
+/dist
+/{{cookiecutter.project_name}}.sublime-workspace
+/*.egg-info
