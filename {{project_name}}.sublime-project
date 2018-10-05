@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"ecc_common_flags": [
+			"-I$ANACONDA_ROOT/lib/python3.6/site-packages/torch/lib/include",
+			"-I$ANACONDA_ROOT/lib/python3.6/site-packages/torch/lib/include/torch/csrc/api/include",
+			"-I$ANACONDA_ROOT/lib/python3.6/site-packages/torch/lib/include/TH",
+			"-I$ANACONDA_ROOT/lib/python3.6/site-packages/torch/lib/include/THC",
+			"-I$ANACONDA_ROOT/include/python3.6m",
+			"-I/usr/local/cuda/include",
+			"-DTORCH_API_INCLUDE_EXTENSION_H",
+			"-DTORCH_EXTENSION_NAME={{project_name}}"
+		]
+	},
+	"build_systems": [
+		{
+			"name": "setuptools",
+			"shell_cmd": "\\$ANACONDA_ROOT/bin/python setup.py install",
+			"working_dir": "${project_path}"
+		}
+	]
+}
